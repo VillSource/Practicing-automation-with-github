@@ -12,7 +12,7 @@ public class ExpressionCalculatorTests
         string expression = @"1+2*3";
         var expectedResult = 7;
 
-        ICalculator cal = new ExpressionCalculator(expression);
+        var cal = new ExpressionCalculator(expression);
         var actualResult = cal.Excecute();
 
         Xunit.Assert.Equal(expectedResult, actualResult);
